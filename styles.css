@@ -32,15 +32,28 @@ height: 600px;
   }
 }
 
-nav ul {
-  list-style: none;
+nav{
+  position: sticky;
+  top: 0px;
+  backdrop-filter: blur(8px);
 }
 
-nav ul li a {
+footer ul, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+footer ul li a,nav ul li a {
   font-weight: 600;
   padding: 24px;
 }
 
 section{
-  max-width: 1200px ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
