@@ -18,11 +18,11 @@ const questions = [
     },
 
     {
-        question: "Who was the first President of USA ?",
-        optionA: "Donald Trump",
-        optionB: "Barack Obama",
-        optionC: "Abraham Lincoln",
-        optionD: "George Washington",
+        question: "In welcher Einheit wird Schärfe gemessen?",
+        optionA: "Sharpend grad",
+        optionB: "Scavoille",
+        optionC: "Scourille",
+        optionD: "Scoville",
         correctOption: "optionD"
     },
 
