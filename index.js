@@ -54,12 +54,12 @@ const questions = [
     },
 
     {
-        question: "_____ is the hottest Continent on Earth ?",
-        optionA: "Oceania",
-        optionB: "Antarctica",
-        optionC: "Africa",
-        optionD: "North America",
-        correctOption: "optionC"
+        question: "Seit wann wird Chili angebaut?",
+        optionA: "seit 10 000 Jahren",
+        optionB: "seit 8 000 Jahren",
+        optionC: "seit 4 000 Jahren",
+        optionD: "seit 20 000 Jahren",
+        correctOption: "optionB
     },
 
     {
