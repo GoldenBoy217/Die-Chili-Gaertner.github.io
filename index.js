@@ -27,21 +27,21 @@ const questions = [
     },
 
     {
-        question: "30 days has ______ ?",
-        optionA: "January",
-        optionB: "December",
-        optionC: "June",
-        optionD: "August",
-        correctOption: "optionC"
+        question: "Kann man durch Chilis high werden?",
+        optionA: "Ja",
+        optionB: "Nein",
+        optionC: "Vielleicht",
+        optionD: "Unmöglich",
+        correctOption: "optionA"
     },
 
     {
-        question: "How manay hours can be found in a day ?",
-        optionA: "30 hours",
-        optionB: "38 hours",
-        optionC: "48 hours",
-        optionD: "24 hours",
-        correctOption: "optionD"
+        question: "Zu welcher Pflanzengattung gehört die Chili?",
+        optionA: "Obst",
+        optionB: "Nuss",
+        optionC: "Beeren",
+        optionD: "Gemüse",
+        correctOption: "optionC"
     },
 
     {
