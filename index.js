@@ -45,12 +45,12 @@ const questions = [
     },
 
     {
-        question: "Which is the longest river in the world ?",
-        optionA: "River Nile",
-        optionB: "Long River",
-        optionC: "River Niger",
-        optionD: "Lake Chad",
-        correctOption: "optionA"
+        question: "Liebhaber von scharfen Chilis wachen nach dem Tod im_____auf.",
+        optionA: "Himmel",
+        optionB: "Ring of Fire",
+        optionC: "Chilisky",
+        optionD: "Fireland",
+        correctOption: "optionD"
     },
 
     {
