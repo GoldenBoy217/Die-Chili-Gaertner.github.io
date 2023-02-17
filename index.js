@@ -9,12 +9,12 @@ const questions = [
     },
 
     {
-        question: "How many players are allowed on a soccer pitch ?",
-        optionA: "10 players",
-        optionB: "11 players",
-        optionC: "9 players",
-        optionD: "12 players",
-        correctOption: "optionB"
+        question: "Wie teuer ist ein Kilo der teuersten Chili der Welt?",
+        optionA: "20.000 Euro",
+        optionB: "1.000 Euro",
+        optionC: "100.000 Euro",
+        optionD: "5.000",
+        correctOption: "optionA"
     },
 
     {
