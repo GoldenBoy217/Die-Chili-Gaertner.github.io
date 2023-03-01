@@ -81,21 +81,21 @@ const questions = [
     },
 
     {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
-        correctOption: "optionD"
+        question: "Wie nennt man den Stoff der für die Schärfe der Chili sorgt?",
+        optionA: "Scoville",
+        optionB: "Capsaicin",
+        optionC: "Capsin",
+        optionD: "Methavitamin",
+        correctOption: "optionB"
     },
 
     {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
-        correctOption: "optionC"
+        question: "Was tun wenn Chili ins Auge gelangt?",
+        optionA: "Alkohol zur Desinfiezierung",
+        optionB: "Kühlen",
+        optionC: "mit Wasser ausspülen",
+        optionD: "ein paar Tropfen Milch ins Auge",
+        correctOption: "optionD"
     },
 
     {
