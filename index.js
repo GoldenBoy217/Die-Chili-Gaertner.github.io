@@ -63,21 +63,21 @@ const questions = [
     },
 
     {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
-        correctOption: "optionA"
+        question: "Wie viele Sorten an Chilis bauen wir an?",
+        optionA: "1",
+        optionB: "5",
+        optionC: "3",
+        optionD: "7",
+        correctOption: "optionB"
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-        correctOption: "optionD"
+        question: "Wie viele verschiedene anerkannte Chilisorten gibt es weltweit?",
+        optionA: "ca. 300",
+        optionB: "ca. 4.000",
+        optionC: "ca. 200.000",
+        optionD: "ca. 1.500",
+        correctOption: "optionB"
     },
 
     {
