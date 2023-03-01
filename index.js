@@ -72,12 +72,12 @@ const questions = [
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
-        correctOption: "optionD"
+        question: "Was ist der schärfste Teil einer Chili?",
+        optionA: "Kerne",
+        optionB: "Strung",
+        optionC: "Fruchtfleisch",
+        optionD: "Die ganze Schote ist gleich scharf",
+        correctOption: "optionC"
     },
 
     {
