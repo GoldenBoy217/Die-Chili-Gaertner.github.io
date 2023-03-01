@@ -99,12 +99,12 @@ const questions = [
     },
 
     {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
-        correctOption: "optionA"
+        question: "Wie oft würdest du bei uns Chili kaufen?",
+        optionA: "immer wenn ich Chilis brauche",
+        optionB: "täglich",
+        optionC: "monatlich",
+        optionD: "wöchentlich",
+        correctOption: "optionB"
     },
 
 
