@@ -74,7 +74,7 @@ const questions = [
     {
         question: "Was ist der schärfste Teil einer Chili?",
         optionA: "Kerne",
-        optionB: "Strung",
+        optionB: "Strunk",
         optionC: "Fruchtfleisch",
         optionD: "Die ganze Schote ist gleich scharf",
         correctOption: "optionC"
