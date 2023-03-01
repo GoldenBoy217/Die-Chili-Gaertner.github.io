@@ -4,7 +4,7 @@ const questions = [
         optionA: "Gärtnern",
         optionB: "rauchen",
         optionC: "Gras rauchen",
-        optionD: "Wape",
+        optionD: "Wave",
         correctOption: "optionC"
     },
 
@@ -63,12 +63,12 @@ const questions = [
     },
 
     {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
-        correctOption: "optionA"
+        question: "Wie viel schärfer ist die Smokin’ Ed’s Carolina Reaper im vergleich zu Tabasco?",
+        optionA: "1000x",
+        optionB: "300x",
+        optionC: "15000x",
+        optionD: "600x",
+        correctOption: "optionD"
     },
 
     {
