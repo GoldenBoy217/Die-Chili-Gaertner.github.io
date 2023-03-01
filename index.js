@@ -59,7 +59,7 @@ const questions = [
         optionB: "seit 8 000 Jahren",
         optionC: "seit 4 000 Jahren",
         optionD: "seit 20 000 Jahren",
-        correctOption: "optionB
+        correctOption: "optionB"
     },
 
     {
