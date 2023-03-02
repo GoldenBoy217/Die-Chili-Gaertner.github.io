@@ -109,12 +109,12 @@ const questions = [
 
 
     {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
-        correctOption: "optionB"
+        question: "Welchen Untergrund bevorzugen Chilipflanzen?",
+        optionA: "Erdigen",
+        optionB: "Steinigen",
+        optionC: "Lehmigen",
+        optionD: "Sandigen",
+        correctOption: "optionD"
     },
 
     {
