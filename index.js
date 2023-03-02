@@ -267,15 +267,15 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
+        remark = "Wir sind enttäuscht du bist nicht scharf."
         remarkColor = "red"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
+        remark = "Wir erwarten mehr schärfe von dir."
         remarkColor = "orange"
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
+        remark = "Es wird scharf es geht aber schärfer."
         remarkColor = "green"
     }
     const playerGrade = (playerScore / 10) * 100
