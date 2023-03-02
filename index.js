@@ -118,29 +118,29 @@ const questions = [
     },
 
     {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
+        question: "Konsumiren die Inhaber Der Chili Gärtner viel Chili?",
+        optionA: "Ja",
+        optionB: "täglich",
+        optionC: "Nein",
+        optionD: "einzelne Inhaber konsumieren keine",
         correctOption: "optionD"
     },
 
     {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
+        question: "Seit wann besitzen die Chiligärtner Chilipflanzen?",
+        optionA: "2022",
+        optionB: "2010",
+        optionC: "2021",
+        optionD: "2023",
         correctOption: "optionA"
     },
 
     {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
+        question: "Was ist die schärfste Chilisoße?",
+        optionA: "Tabasco",
+        optionB: "Sharpend Angel",
+        optionC: "Mad dog",
+        optionD: "Habanero Red",
         correctOption: "optionC"
     },
 
