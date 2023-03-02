@@ -278,6 +278,13 @@ function handleEndGame() {
         remark = "Es wird scharf es geht aber schärfer."
         remarkColor = "green"
     }
+    
+    }
+    else if (playerScore >= 10) {
+        remark = "Du bist der Schärfe Gott."
+        remarkColor = "green"
+    }
+    
     const playerGrade = (playerScore / 10) * 100
 
     //data to display to score board
