@@ -221,7 +221,13 @@ function checkForAnswer() {
             setTimeout(() => {
                 questionNumber++
             }, 1000)
-   //called when the next button is called
+        }
+    })
+}
+
+
+
+//called when the next button is called
 function handleNextQuestion() {
     checkForAnswer() //check if player picked right or wrong option
     unCheckRadioButtons()
@@ -254,4 +260,55 @@ function unCheckRadioButtons() {
     }
 }
 
+// function for when all questions being answered
+function handleEndGame() {
+    let remark = null
+    let remarkColor = null
 
+    // condition check for player remark and remark color
+    if (playerScore <= 3) {
+        remark = "Wir sind enttäuscht du bist nicht scharf."
+        remarkColor = "red"
+    }
+    else if (playerScore >= 4 && playerScore < 7) {
+        remark = "Wir erwarten mehr schärfe von dir."
+        remarkColor = "orange"
+    }
+    else if (playerScore >= 7) {
+        remark = "Es wird scharf es geht aber schärfer."
+        remarkColor = "green"
+    }
+    
+    }
+    else if (playerScore >= 10) {
+        remark = "Du bist der Schärfe Gott."
+        remarkColor = "green"
+    }
+    
+    const playerGrade = (playerScore / 10) * 100
+
+    //data to display to score board
+    document.getElementById('remarks').innerHTML = remark
+    document.getElementById('remarks').style.color = remarkColor
+    document.getElementById('grade-percentage').innerHTML = playerGrade
+    document.getElementById('wrong-answers').innerHTML = wrongAttempt
+    document.getElementById('right-answers').innerHTML = playerScore
+    document.getElementById('score-modal').style.display = "flex"
+
+}
+
+//closes score modal, resets game and reshuffles questions
+function closeScoreModal() {
+    questionNumber = 1
+    playerScore = 0
+    wrongAttempt = 0
+    indexNumber = 0
+    shuffledQuestions = []
+    NextQuestion(indexNumber)
+    document.getElementById('score-modal').style.display = "none"
+}
+
+//function to close warning modal
+function closeOptionModal() {
+    document.getElementById('option-modal').style.display = "none"
+}
