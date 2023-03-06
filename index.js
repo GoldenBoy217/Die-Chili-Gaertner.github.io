@@ -221,8 +221,37 @@ function checkForAnswer() {
             setTimeout(() => {
                 questionNumber++
             }, 1000)
+   //called when the next button is called
+function handleNextQuestion() {
+    checkForAnswer() //check if player picked right or wrong option
+    unCheckRadioButtons()
+    //delays next question displaying for a second just for some effects so questions don't rush in on player
+    setTimeout(() => {
+        if (indexNumber <= 9) {
+//displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
+            NextQuestion(indexNumber)
         }
+        else {
+            handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
+        }
+        resetOptionBackground()
+    }, 1000);
+}
+
+//sets options background back to null after display the right/wrong colors
+function resetOptionBackground() {
+    const options = document.getElementsByName("option");
+    options.forEach((option) => {
+        document.getElementById(option.labels[0].id).style.backgroundColor = ""
     })
+}
+
+// unchecking all radio buttons for next question(can be done with map or foreach loop also)
+function unCheckRadioButtons() {
+    const options = document.getElementsByName("option");
+    for (let i = 0; i < options.length; i++) {
+        options[i].checked = false;
+    }
 }
 
 
