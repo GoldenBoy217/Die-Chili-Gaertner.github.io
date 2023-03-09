@@ -142,7 +142,89 @@ const questions = [
         optionC: "Mad dog",
         optionD: "Habanero Red",
         correctOption: "optionC"
-    }, 
+    },
+
+    {
+        question: "____ is the capital of Nigeria ?",
+        optionA: "Abuja",
+        optionB: "Lagos",
+        optionC: "Calabar",
+        optionD: "Kano",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Los Angeles is also known as ?",
+        optionA: "Angels City",
+        optionB: "Shining city",
+        optionC: "City of Angels",
+        optionD: "Lost Angels",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "What is the capital of Germany ?",
+        optionA: "Georgia",
+        optionB: "Missouri",
+        optionC: "Oklahoma",
+        optionD: "Berlin",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "How many sides does an hexagon have ?",
+        optionA: "Six",
+        optionB: "Sevene",
+        optionC: "Four",
+        optionD: "Five",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "How many planets are currently in the solar system ?",
+        optionA: "Eleven",
+        optionB: "Seven",
+        optionC: "Nine",
+        optionD: "Eight",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Which Planet is the hottest ?",
+        optionA: "Jupitar",
+        optionB: "Mercury",
+        optionC: "Earth",
+        optionD: "Venus",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "where is the smallest bone in human body located?",
+        optionA: "Toes",
+        optionB: "Ears",
+        optionC: "Fingers",
+        optionD: "Nose",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "How many hearts does an Octopus have ?",
+        optionA: "One",
+        optionB: "Two",
+        optionC: "Three",
+        optionD: "Four",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "How many teeth does an adult human have ?",
+        optionA: "28",
+        optionB: "30",
+        optionC: "32",
+        optionD: "36",
+        correctOption: "optionC"
+    }
+
 ]
 
 
@@ -221,7 +303,13 @@ function checkForAnswer() {
             setTimeout(() => {
                 questionNumber++
             }, 1000)
-   //called when the next button is called
+        }
+    })
+}
+
+
+
+//called when the next button is called
 function handleNextQuestion() {
     checkForAnswer() //check if player picked right or wrong option
     unCheckRadioButtons()
@@ -252,4 +340,50 @@ function unCheckRadioButtons() {
     for (let i = 0; i < options.length; i++) {
         options[i].checked = false;
     }
+}
+
+// function for when all questions being answered
+function handleEndGame() {
+    let remark = null
+    let remarkColor = null
+
+    // condition check for player remark and remark color
+    if (playerScore <= 3) {
+        remark = "Bad Grades, Keep Practicing."
+        remarkColor = "red"
+    }
+    else if (playerScore >= 4 && playerScore < 7) {
+        remark = "Average Grades, You can do better."
+        remarkColor = "orange"
+    }
+    else if (playerScore >= 7) {
+        remark = "Excellent, Keep the good work going."
+        remarkColor = "green"
+    }
+    const playerGrade = (playerScore / 10) * 100
+
+    //data to display to score board
+    document.getElementById('remarks').innerHTML = remark
+    document.getElementById('remarks').style.color = remarkColor
+    document.getElementById('grade-percentage').innerHTML = playerGrade
+    document.getElementById('wrong-answers').innerHTML = wrongAttempt
+    document.getElementById('right-answers').innerHTML = playerScore
+    document.getElementById('score-modal').style.display = "flex"
+
+}
+
+//closes score modal, resets game and reshuffles questions
+function closeScoreModal() {
+    questionNumber = 1
+    playerScore = 0
+    wrongAttempt = 0
+    indexNumber = 0
+    shuffledQuestions = []
+    NextQuestion(indexNumber)
+    document.getElementById('score-modal').style.display = "none"
+}
+
+//function to close warning modal
+function closeOptionModal() {
+    document.getElementById('option-modal').style.display = "none"
 }
