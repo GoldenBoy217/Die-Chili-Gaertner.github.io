@@ -109,40 +109,122 @@ const questions = [
 
 
     {
-        question: "Welchen Untergrund bevorzugen Chilipflanzen?",
-        optionA: "Erdigen",
-        optionB: "Steinigen",
-        optionC: "Lehmigen",
-        optionD: "Sandigen",
+        question: "How many permanent teeth does a dog have ?",
+        optionA: "38",
+        optionB: "42",
+        optionC: "40",
+        optionD: "36",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Which national team won the football World cup in 2018 ?",
+        optionA: "England",
+        optionB: "Brazil",
+        optionC: "Germany",
+        optionD: "France",
         correctOption: "optionD"
     },
 
     {
-        question: "Konsumiren die Inhaber Der Chili Gärtner viel Chili?",
-        optionA: "Ja",
-        optionB: "täglich",
-        optionC: "Nein",
-        optionD: "einzelne Inhaber konsumieren keine",
-        correctOption: "optionD"
-    },
-
-    {
-        question: "Seit wann besitzen die Chiligärtner Chilipflanzen?",
-        optionA: "2022",
-        optionB: "2010",
-        optionC: "2021",
-        optionD: "2023",
+        question: "Which US state was Donald Trump Born ?",
+        optionA: "New York",
+        optionB: "California",
+        optionC: "New Jersey",
+        optionD: "Los Angeles",
         correctOption: "optionA"
     },
 
     {
-        question: "Was ist die schärfste Chilisoße?",
-        optionA: "Tabasco",
-        optionB: "Sharpend Angel",
-        optionC: "Mad dog",
-        optionD: "Habanero Red",
+        question: "How man states does Nigeria have ?",
+        optionA: "24",
+        optionB: "30",
+        optionC: "36",
+        optionD: "37",
         correctOption: "optionC"
-    }, 
+    },
+
+    {
+        question: "____ is the capital of Nigeria ?",
+        optionA: "Abuja",
+        optionB: "Lagos",
+        optionC: "Calabar",
+        optionD: "Kano",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Los Angeles is also known as ?",
+        optionA: "Angels City",
+        optionB: "Shining city",
+        optionC: "City of Angels",
+        optionD: "Lost Angels",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "What is the capital of Germany ?",
+        optionA: "Georgia",
+        optionB: "Missouri",
+        optionC: "Oklahoma",
+        optionD: "Berlin",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "How many sides does an hexagon have ?",
+        optionA: "Six",
+        optionB: "Sevene",
+        optionC: "Four",
+        optionD: "Five",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "How many planets are currently in the solar system ?",
+        optionA: "Eleven",
+        optionB: "Seven",
+        optionC: "Nine",
+        optionD: "Eight",
+        correctOption: "optionD"
+    },
+
+    {
+        question: "Which Planet is the hottest ?",
+        optionA: "Jupitar",
+        optionB: "Mercury",
+        optionC: "Earth",
+        optionD: "Venus",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "where is the smallest bone in human body located?",
+        optionA: "Toes",
+        optionB: "Ears",
+        optionC: "Fingers",
+        optionD: "Nose",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "How many hearts does an Octopus have ?",
+        optionA: "One",
+        optionB: "Two",
+        optionC: "Three",
+        optionD: "Four",
+        correctOption: "optionC"
+    },
+
+    {
+        question: "How many teeth does an adult human have ?",
+        optionA: "28",
+        optionB: "30",
+        optionC: "32",
+        optionD: "36",
+        correctOption: "optionC"
+    }
+
 ]
 
 
@@ -267,24 +349,17 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Wir sind enttäuscht du bist nicht scharf."
+        remark = "Bad Grades, Keep Practicing."
         remarkColor = "red"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Wir erwarten mehr schärfe von dir."
+        remark = "Average Grades, You can do better."
         remarkColor = "orange"
     }
     else if (playerScore >= 7) {
-        remark = "Es wird scharf es geht aber schärfer."
+        remark = "Excellent, Keep the good work going."
         remarkColor = "green"
     }
-    
-    }
-    else if (playerScore >= 10) {
-        remark = "Du bist der Schärfe Gott."
-        remarkColor = "green"
-    }
-    
     const playerGrade = (playerScore / 10) * 100
 
     //data to display to score board
@@ -312,4 +387,3 @@ function closeScoreModal() {
 function closeOptionModal() {
     document.getElementById('option-modal').style.display = "none"
 }
-
